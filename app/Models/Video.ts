@@ -4,13 +4,10 @@ import { MapPool, Side } from "Contracts/enums";
 
 export default class Video extends BaseModel {
   @column({ isPrimary: true })
-  public id: number;
+  public youtube_id: string;
 
   @column()
   public title: string;
-
-  @column()
-  public youtube_id: string;
 
   @column()
   public map: MapPool;

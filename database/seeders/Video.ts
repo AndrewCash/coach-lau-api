@@ -8,8 +8,8 @@ export default class VideoSeeder extends BaseSeeder {
     // Write your database queries inside the run method
     await Video.createMany([
       {
-        title: "SMOOOOOOOOOOOOYA",
         youtube_id: "YxDox87_8Kk",
+        title: "SMOOOOOOOOOOOOYA",
         map: MapPool.Ancient,
         side: Side.CT,
         player: "smooya",
@@ -18,8 +18,8 @@ export default class VideoSeeder extends BaseSeeder {
         upload_date: DateTime.fromISO("2021-12-13"),
       },
       {
-        title: "b1tferno",
         youtube_id: "TQ9ufHeFIvA",
+        title: "b1tferno",
         map: MapPool.Inferno,
         side: Side.CT,
         player: "b1t",
