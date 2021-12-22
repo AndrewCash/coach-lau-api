@@ -10,10 +10,7 @@ export default class Video extends BaseModel {
   public title: string;
 
   @column()
-  public youtube_link: string;
-
-  @column()
-  public thumbnail: string;
+  public youtube_id: string;
 
   @column()
   public map: MapPool;
@@ -26,6 +23,9 @@ export default class Video extends BaseModel {
 
   @column()
   public enemy_team: string;
+
+  @column()
+  public upload_date: DateTime;
 
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime;
