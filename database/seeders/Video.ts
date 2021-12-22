@@ -27,6 +27,16 @@ export default class VideoSeeder extends BaseSeeder {
         enemy_team: "Virtus.pro",
         upload_date: DateTime.fromISO("2021-05-02"),
       },
+      {
+        youtube_id: "MNgPwRMVWzo",
+        title: "m0NESY, the 16-year-old AWP prodigy",
+        map: MapPool.Vertigo,
+        side: Side.CT,
+        player: "m0nesy",
+        team: "NAVI Junior",
+        enemy_team: "FURIA Academy",
+        upload_date: DateTime.fromISO("2021-07-30"),
+      },
     ]);
   }
 }
