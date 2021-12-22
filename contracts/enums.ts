@@ -8,3 +8,8 @@ export enum MapPool {
   Train = "Train",
   Vertigo = "Vertigo",
 }
+
+export enum Side {
+  CT = "Counter-Terrorist",
+  T = "Terrorist",
+}

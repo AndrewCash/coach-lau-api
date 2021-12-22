@@ -1,5 +1,5 @@
 import BaseSchema from "@ioc:Adonis/Lucid/Schema";
-import { MapPool } from "Contracts/enums";
+import { MapPool, Side } from "Contracts/enums";
 
 export default class Videos extends BaseSchema {
   protected tableName = "videos";
@@ -13,6 +13,11 @@ export default class Videos extends BaseSchema {
         useNative: true,
         enumName: "map_pool",
         existingType: true,
+      }).notNullable;
+      table.enu("side", Object.values(Side), {
+        useNative: true,
+        enumName: "side",
+        existingType: false,
       }).notNullable;
       table.string("player").notNullable;
       table.string("team").notNullable;
@@ -29,6 +34,7 @@ export default class Videos extends BaseSchema {
 
   public async down() {
     // this.schema.raw('DROP TYPE IF EXISTS "map_pool"');
+    // this.schema.raw('DROP TYPE IF EXISTS "side"');
     this.schema.dropTable(this.tableName);
   }
 }

@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 import { BaseModel, column } from "@ioc:Adonis/Lucid/Orm";
-import { MapPool } from "Contracts/enums";
+import { MapPool, Side } from "Contracts/enums";
 
 export default class Video extends BaseModel {
   @column({ isPrimary: true })
@@ -14,6 +14,9 @@ export default class Video extends BaseModel {
 
   @column()
   public map: MapPool;
+
+  @column()
+  public side: Side;
 
   @column()
   public player: string;
