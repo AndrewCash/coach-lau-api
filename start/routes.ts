@@ -27,3 +27,5 @@ Route.get("/", async () => {
 Route.get("/whats_popular_youtube", async () => {
   return { another_day: "another deemo" };
 });
+
+Route.get("/videos/all", "VideoController.all");
