@@ -23,3 +23,7 @@ import Route from "@ioc:Adonis/Core/Route";
 Route.get("/", async () => {
   return { hello: "world" };
 });
+
+Route.get("/whats_popular_youtube", async () => {
+  return { another_day: "another deemo" };
+});
